@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranesan's Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <style>
+        body {
+            margin: 0px;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: #fff;
+        }
+        body {
+            scroll-behavior: smooth; /* Enable smooth scrolling for the entire page */
+            margin: 0; /* Reset default margin to ensure full-width */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+
+        
+
+        #container {
+            text-align: center;
+           display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+       
+
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0px 50px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+       
+
+
+
+#profile-image:hover {
+    border-radius: 50%;
+    
+    box-shadow: 0 0px 80px rgba(27, 189, 243, 0.5); /* Add a box shadow on hover */
+    position: relative;
+}
+
+
+
+
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+
+        .social-icons img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+        span:hover{
+            color: rgb(0, 0, 0);
+            transition: 2.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">Portfolio</div>
+        <nav>
+           
+        </nav>
+    </header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranesan's Portfolio</title>
+
+    <style>
+        /* Your existing styles */
+
+        body {
+            scroll-behavior: smooth; /* Enable smooth scrolling for the entire page */
+        }
+
+        #about-container {
+            display: flex;
+            margin: 50px;
+            align-items: center;
+            justify-content: space-between;
+            transition: margin 0.5s ease-in-out; /* Add a smooth transition for the margin */
+        }
+
+        #about-image {
+            max-width: 5%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(6, 232, 232, 0.8);
+            order: -1;
+            transition: order 0.5s ease-in-out; /* Add a smooth transition for the order property */
+        }
+
+        #about-content {
+            flex: 1;
+            margin-right: 20px;
+            text-align: left;
+            transition: margin 0.5s ease-in-out; /* Add a smooth transition for the margin */
+        }
+
+        #about-content h2 {
+            font-size: 5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-left: 100px;
+        }
+
+        #about-content p {
+            font-weight: bold;
+            line-height: 1.5;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            margin-left: 100px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 330vh;
+            scroll-behavior: smooth; /* Enable smooth scrolling for the entire page */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 20px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #00ffcc;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        #latest-project {
+            font-size: 3em;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: -70px;
+        }
+
+        #latest-project::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 2px;
+        }
+
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #latest-project:hover {
+            animation: pulseAnimation 1s infinite;
+        }
+
+        #projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .project-card {
+            width: 300px;
+            height: 200px;
+            background-color: #444;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            background-color: red;
+            transform: translateY(-5px);
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .project-link {
+            font-size: 0.9em;
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .project-icon {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .social-icons1 {
+            display: inline-block;
+            position: relative;
+        }
+
+        .social-icons1 img {
+            max-width: 45px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Your existing HTML -->
+
+    <!-- Add a smooth scroll script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var aboutLink = document.querySelector('a[href="#about-container"]');
+
+            aboutLink.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                var aboutContainer = document.getElementById('about-container');
+
+                // Scroll to the about container with smooth transition
+                aboutContainer.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var skillsLink = document.querySelector('a[href="#skills-container"]');
+    
+            skillsLink.addEventListener('click', function (event) {
+                event.preventDefault();
+    
+                var skillsContainer = document.getElementById('skills-container');
+    
+                // Scroll to the skills container with smooth transition
+                skillsContainer.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var projectsLink = document.querySelector('a[href="#projects-container"]');
+    
+            projectsLink.addEventListener('click', function (event) {
+                event.preventDefault();
+    
+                var projectsContainer = document.getElementById('projects-container');
+    
+                // Scroll to the projects container with smooth transition
+                projectsContainer.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    
+    
+</body>
+
+</html>
+
+
+    <style>
+        
+
+#profile-text {
+    margin-top: 50cm;
+    margin-left: 100px; 
+    font-size: 2.3rem;
+    font-weight: 200;
+    top: 100px
+}
+#profile-image {
+    max-width: 80%; 
+    height: 450px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+    margin-left: 10px;
+    margin-top: 53cm;
+    border:
+   
+
+}
+
+
+
+
+
+        h1 span {
+            font-weight: bold;
+        }
+
+        .social-icons {
+            margin: 50px 50px;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+        }
+        @import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+  --glow-color: hsl(186 100% 69%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+        
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.glowing-btn {
+  position: relative;
+  color: var(--glow-color);
+  cursor: pointer;
+  
+ 
+  border-radius: 0.45em;
+  background: none;
+  perspective: 2em;
+  font-family: "Raleway", sans-serif;
+  
+  font-weight: 900;
+  letter-spacing: 0.5em;
+  
+  border: 0.02em solid var(--glow-color);
+
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  animation: border-flicker 2s linear infinite;
+  padding: 0.12em 0.62em; /* Adjust the padding as needed */
+  border: 0.1em solid var(--glow-color); /* Adjust the border thickness as needed */
+  border-radius: 0.25em;
+  font-size: 0.7em; /* Adjust the font size as needed */
+  padding: 0.4em 1.2em;
+
+  letter-spacing: 0.5em;
+}
+
+.glowing-txt {
+  float: left;
+  margin-right: -0.8em;
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+  animation: text-flicker 3s linear infinite;
+}
+
+.faulty-letter {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--glow-color);
+  pointer-events: none;
+}
+
+.glowing-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--glow-color);
+  box-shadow: 0 0 2em 0.2em var(--glow-color);
+  transition: opacity 100ms linear;
+}
+
+.glowing-btn:hover {
+  
+  text-shadow: none;
+  animation: none;
+}
+
+.glowing-btn:hover .glowing-txt {
+  animation: none;
+}
+
+.glowing-btn:hover .faulty-letter {
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.glowing-btn:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.glowing-btn:hover:after {
+  opacity: 1;
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .glowing-btn{
+    font-size: 1em;
+  }
+}
+.typeeff{
+    text-transform: capitalize;
+    color: #00ff75;
+}
+.featured-name{
+   font-size: 50px;
+   font-weight: 600;
+   color:#00ff75;
+   margin-block: 20px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="profile-text">
+            <div>
+           <p >Hello I am  <span class="typeeff" id="typed-output"></span></p>
+        </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var options = {
+                strings: ["Pranesan","Designer", "Developer"],
+                typeSpeed: 100,
+                backSpeed: 80,
+                backDelay: 2000,
+                loop: true
+            };
+
+            var typed = new Typed("#typed-output", options);
+        });
+    </script>
+            <p>I'm a web designer, developer, and UI/UX designer</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/your-github-username" target="_blank">
+                    <img src="C:\Users\prane\Downloads\code.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                    <img src="C:\Users\prane\Downloads\linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+
+            
+            <button class='glowing-btn'><span class='glowing-txt'>R<span class='faulty-letter'>E</span>SUME</span></button>
+        </div>
+        <div>
+        <img style="align-items: center;" id="profile-image" src="C:\Users\prane\Downloads\20240124_224956-PhotoRoom.png-PhotoRoom-PhotoRoom.png-PhotoRoom.png" alt="Your Name">
+        </div>
+    </div>
+
+</body>
+<body>
+    <style>
+        #container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       
+
+        #about-container {
+            display: flex;
+            margin: 50px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #about-image {
+            max-width: 25%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10 10px rgba(6, 232, 232, 0.8);
+            order: -1; 
+        }
+
+        #about-content {
+            flex: 1;
+            margin-right: 20px; /* Adjusted margin to the right */
+            text-align: left;
+
+        }
+
+        #about-content h2 {
+            font-size: 5em; /* Increased font size */
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-left: 100px;
+            
+        }
+
+        #about-content p {
+            font-weight: bold; /* Make the content text bold */
+            line-height: 1.5;
+            font-size: 1.5em; /* Increased font size */
+            margin-bottom: 10px;
+            margin-left: 100px;
+        }
+
+       
+    </style>
+
+    <div id="about-container">
+        <div id="about-content">
+            <h2>About Me</h2>
+            <p>I am a passionate web designer, UI/UX designer, and developer currently pursuing Computer Science and Design at Kongu Engineering College. With a keen eye for aesthetics and a love for coding, I strive to create engaging and user-friendly digital experiences. My journey involves blending creativity with technology to bring innovative designs to life. Let's build something extraordinary together!</p>
+        </div>
+        <img id="about-image" src="E:\photos\photos\DSC_0681_result.jpg" alt="About Me Image">
+    </div>
+
+   
+</body>
+    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranesan's Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 330vh;
+        }
+
+        #skills-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            margin-top: 50px;
+        }
+
+        #skills-heading {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="skills-container">
+        <div id="skills-heading">My Skills</div>
+
+        <div class="logo-container">
+            <img src="C:\Users\prane\Downloads\HTML5_logo_and_wordmark.svg.png" alt="HTML Logo" class="logo">
+            <img src="C:\Users\prane\Downloads\CSS3_logo_and_wordmark.svg.png" alt="CSS Logo" class="logo">
+            <img src="C:\Users\prane\Downloads\695px-C_Programming_Language.svg.png" alt="C Logo" class="logo">
+            <img src="C:\Users\prane\Downloads\png-clipart-java-programming-language-computer-programming-programmer-logo-language-contact-text-logo.png" alt="Java Logo" class="logo">
+            <img src="C:\Users\prane\Downloads\1_pZ8Zf5zvTpdptHX5xPzWOQ.jpg" alt="C Logo" class="logo">
+        </div>
+    </div>
+</body>
+</html>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+        }
+       
+
+        #skills-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+        }
+
+        #skills-heading {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .skill-container {
+    display: flex;
+    align-items: center;
+}
+
+.skill-label {
+    font-size: 2.5em;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="skills-container">
+        
+        
+
+        <div class="skill-item">
+            <div class="skill-label">Web Development:</div>
+            <div class="progress-bar">
+                <div class="progress-fill" data-width="50"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-label">Mobile Design:</div>
+            <div class="progress-bar">
+                <div class="progress-fill" data-width="70"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-label">UI/UX:</div>
+            <div class="progress-bar">
+                <div class="progress-fill" data-width="80"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-label">Programming in C:</div>
+            <div class="progress-bar">
+                <div class="progress-fill" data-width="60"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-label">Programming in Java:</div>
+            <div class="progress-bar">
+                <div class="progress-fill" data-width="75"></div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+<style>
+    .progress-bar {
+    width: 900px;
+    height: 20px; 
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px; 
+}
+
+.progress-fill {
+    height: 100%;
+    width: 100%;
+    background-color: #3498db; /* Change the color as needed */
+    animation: fillAnimation 2s ease-in-out forwards; /* Adjust the animation duration as needed */
+}
+
+@keyframes fillAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+  @keyframes fillAnimation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+   
+</style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVl7mNv8/X1rDZJtZ+cb5LZBGbyKZtqLjFfjM5g4t7GpdA" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 330vh;
+        }
+
+        #latest-project {
+            font-size: 3em;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: -70px;
+            
+        }
+
+        #latest-project::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 2px;
+            
+            
+        }
+
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #latest-project:hover {
+            animation: pulseAnimation 1s infinite;
+        }
+
+        #projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .project-card {
+            width: 300px;
+            height: 200px;
+            background-color: #444;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            background-color: red;
+            transform: translateY(-5px);
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .project-link {
+            font-size: 0.9em;
+            
+            text-decoration: none;
+            display: inline-block;
+            
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .project-icon {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        #logo1{
+            font-size: 1.5em;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 20px;
+        }
+        .social-icons1 {
+    display: inline-block;
+    position: relative;
+}
+
+.social-icons1 img {
+    max-width: 45px; /* Adjust the value to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+    </style>
+</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVl7mNv8/X1rDZJtZ+cb5LZBGbyKZtqLjFfjM5g4t7GpdA" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 330vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 20px;
+        }
+
+        nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 1000; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #00ffcc;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+        #latest-project {
+            font-size: 3em;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: -70px;
+        }
+
+        #latest-project::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 2px;
+        }
+
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #latest-project:hover {
+            animation: pulseAnimation 1s infinite;
+        }
+
+        #projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .project-card {
+            width: 300px;
+            height: 200px;
+            background-color: #444;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            background-color: red;
+            transform: translateY(-5px);
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .project-link {
+            font-size: 0.9em;
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .project-icon {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .social-icons1 {
+            display: inline-block;
+            position: relative;
+        }
+
+        .social-icons1 img {
+            max-width: 45px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">Portfolio</div>
+        <nav>
+            
+        </nav>
+    </header>
+
+    <div id="latest-project">Latest Project</div>
+
+    <div id="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-content">
+                <i class="fas fa-vr-project project-icon"></i>
+                <div class="social-icons1">
+                    <img src="C:\Users\prane\Downloads\vr.png" alt="GitHub">
+                </div>
+                <div class="project-title">AR VR Project</div>
+                <div class="project-description">Explore the world of Augmented Reality and Virtual Reality.</div>
+                <a href="your_ar_vr_project_link" class="project-link" target="_blank">Visit Project</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-content">
+                <i class="fas fa-money-bill-wave project-icon"></i>
+                <div class="social-icons1">
+                    <img src="C:\Users\prane\Downloads\images (1).png" alt="GitHub">
+                </div>
+                <div class="project-title">ATM Money Transaction</div>
+                <div class="project-description">A simple ATM money transaction system built using JavaScript.</div>
+                <a href="your_atm_project_link" class="project-link" target="_blank">Visit Project</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-content">
+                <i class="fas fa-cut project-icon"></i>
+                <div class="social-icons1">
+                    <img src="C:\Users\prane\Downloads\hair.png" alt="GitHub">
+                </div>
+                <div class="project-title">Hair Studio Site</div>
+                <div class="project-description">Check out my HTML and CSS project - a Hair Studio website.</div>
+                <a href="your_hair_studio_project_link" class="project-link" target="_blank">Visit Project</a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <div class="project-content">
+                <i class="fas fa-cut project-icon"></i>
+                <div class="social-icons1">
+                    <img src="C:\Users\prane\Downloads\png-transparent-figma-app-logo-tech-companies-thumbnail.png" alt="GitHub">
+                </div>
+                <div class="project-title">Figma Designs</div>
+                <div class="project-description">Check it out.</div>
+                <a href="your_hair_studio_project_link" class="project-link" target="_blank">Visit Project</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<header>
+    
+    <style>
+        /* Add your existing CSS styles here */
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+     <script>
+        sr.reveal('.featured-text-card',{})
+  sr.reveal('.featured-name',{delay: 100})
+  sr.reveal('.featured-text-info',{delay: 200})
+  sr.reveal('.featured-text-btn',{delay: 200})
+  sr.reveal('.social_icons',{delay: 200})
+  sr.reveal('.featured-image',{delay: 300})
+  
+
+  /* -- PROJECT BOX -- */
+  sr.reveal('.project-box',{interval: 200})
+
+  /* -- HEADINGS -- */
+  sr.reveal('.top-header',{})
+
+/* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
+
+  /* -- ABOUT INFO & CONTACT INFO -- */
+  const srLeft = ScrollReveal({
+    origin: 'left',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+  })
+  
+  srLeft.reveal('.about-info',{delay: 100})
+  srLeft.reveal('.contact-info',{delay: 100})
+
+  /* -- ABOUT SKILLS & FORM BOX -- */
+  const srRight = ScrollReveal({
+    origin: 'right',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+  })
+  
+  srRight.reveal('.skills-box',{delay: 100})
+  srRight.reveal('.form-control',{delay: 100})
+  
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+        
+    </script>
+    <div id="logo">Portfolio</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about-container">About</a>
+        <a href="#skills-container">Skills</a>
+        <a href="#projects-container">Projects</a>
+        <a href="#contact-container">Contact</a>
+    </nav>
+    <style>
+        
+    </style>
+    
+    <body>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>Email: pranesans@gmail.com</p>
+                <p>Phone: 877-858-1484</p>
+            </div>
+            <body>
+
+                <div class="card">
+                    <div class="card2">
+                      <form class="form">
+                        <p id="heading">CONTACT FORM</p>
+                        <div class="field">
+                          <svg
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="input-icon"
+                          >
+                            <path
+                              d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"
+                            ></path>
+                          </svg>
+                          <input
+                            type="text"
+                            class="input-field"
+                            placeholder="Username"
+                            autocomplete="off"
+                          />
+                        </div>
+                        <div class="field">
+                          <svg
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            height="16"
+                            width="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="input-icon"
+                          >
+                            <path
+                              d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                            ></path>
+                          </svg>
+                          <input type="password" class="input-field" placeholder="email id" />
+                        </div>
+                        <div class="btn">
+                            <button class="button2">SUMBIT</button>
+                        </div>
+                       
+                      </form>
+                    </div>
+                  </div>
+<style>
+    .body {
+  margin: 0;
+  padding: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+  
+   
+}
+
+.card {
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  transition: box-shadow 0.3s ease; /* Add a transition for smooth effect */
+
+    
+}
+
+.field:hover {
+    box-shadow: inset 2px 3px 8px rgb(3, 232, 201); /* Change the box shadow on hover */
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 0.5em;
+
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+  position: relative; /* Add position relative for pseudo-element */
+
+    /* Initial border color */
+    border: 2px solid #252525;
+}
+
+
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button3:hover {
+  background-color: red;
+  color: white;
+}
+
+</style>                  
+
+
+    <body>
+        <div id="mode-toggle" onclick="toggleMode()">
+            <div id="moon-icon" class="mode-icon">&#9790;</div>
+            <div id="sun-icon" class="mode-icon">&#9728;</div>
+        </div>
+    </body>
+    <style></style>
+
+    <style>
+        #mode-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.mode-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+#moon-icon {
+    color: #fff; /* Moon icon color for light mode */
+}
+
+#sun-icon {
+    color: #333; /* Sun icon color for dark mode */
+}
+/* Styles for dark mode */
+body.dark-mode {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* Light text color for better readability */
+}
+
+/* Styles for light mode */
+body.light-mode {
+    background-color: #fff; 
+    color: #333; 
+}
+
+
+.moon-sun-icon {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+/* Styles for moon icon (initial state) */
+.moon-icon {
+    display: none; /* Initially hidden in light mode */
+}
+
+/* Styles for sun icon (dark mode) */
+.sun-icon {
+    display: inline-block; /* Displayed in dark mode */
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    
+}
+
+
+
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script>
+         
+        const sr = ScrollReveal({
+          origin: 'top',
+          distance: '80px',
+          duration: 2000,
+          reset: true     
+   })
+       
+        document.addEventListener('DOMContentLoaded', function () {
+    const modeToggle = document.getElementById('mode-toggle');
+    const moonIcon = document.getElementById('moon-icon');
+    const sunIcon = document.getElementById('sun-icon');
+    
+    // Check the user's preference in local storage
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    
+    // Set initial mode
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        moonIcon.style.color = '#333';
+        sunIcon.style.color = '#fff';
+    }
+    
+    function toggleMode() {
+        document.body.classList.toggle('dark-mode');
+        const enableDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', enableDarkMode ? 'enabled' : 'disabled');
+        
+        if (enableDarkMode) {
+            moonIcon.style.color = '#333';
+            sunIcon.style.color = '#fff';
+        } else {
+            moonIcon.style.color = '#fff';
+            sunIcon.style.color = '#333';
+        }
+    }
+
+    modeToggle.addEventListener('click', toggleMode);
+});
+
+
+    </script>
+        <footer>
+            <div>
+                <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+        
+    </body>
+    </html>
+    
+    
+</div>
+</body>
+</body>
+</html>
